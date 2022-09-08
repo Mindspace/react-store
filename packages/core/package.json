@@ -1,0 +1,26 @@
+{
+  "name": "@mindspace-io/core",
+  "version": "2.0.0",
+  "type": "commonjs",
+  "author": {
+    "name": "Thomas Burleson, Mindspace",
+    "email": "ThomasBurleson@Gmail.com"
+  },
+  "description": "Core Typescripts utils for EventBus, Dependency Injection (DI), and pagination",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mindspace/react-store.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/Mindspace/react-store",
+  "bugs": {
+    "url": "https://github.com/Mindspace/react-store/issues"
+  },
+  "dependencies": {
+    "@datorama/akita": "^6.2.0",
+    "immer": ">8.0.0",
+    "rxjs": "^6.6.7"
+  }
+}

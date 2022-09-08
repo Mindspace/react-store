@@ -1,0 +1,26 @@
+{
+  "name": "@mindspace/react-store",
+  "private": false,
+  "license": "MIT",
+  "version": "2.0.0",
+  "description": "Reactive store using RxJS and Akita; based on ideas of Zustand",
+  "author": {
+    "name": "Thomas Burleson, Mindspace",
+    "email": "ThomasBurleson@Gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mindspace/react-store.git",
+    "directory": "packages/react-store"
+  },
+  "dependencies": {
+    "@mindspace-io/core": "^2.0.0",
+    "@datorama/akita": "^6.2.4",
+    "immer": "^9.0.7",
+    "rxjs": "^6.6.7"
+  },
+  "peerDependencies": {
+    "react": ">17.0.2",
+    "react-dom": ">17.0.2"
+  }
+}

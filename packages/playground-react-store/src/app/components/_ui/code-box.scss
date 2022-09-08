@@ -1,0 +1,27 @@
+.codeBox {
+  background-color: lightblue;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 611px;
+  margin-bottom: 20px;
+
+  .file {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    font-size: 0.8em !important;
+    font: inherit;
+    vertical-align: baseline;
+    color: gray;
+    text-align: left;
+    opacity: 0.75;
+  }
+
+  .icon {
+    margin-top: -1px;
+    fill: gray;
+    margin-right: 7px;
+    transform-origin: center center;
+    display: inline-block;
+  }
+}

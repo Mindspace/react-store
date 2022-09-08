@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "target": "es2015",
+    "lib": ["es2017", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@mindspace-io/core": ["packages/core/src/index.ts"],
+      "@mindspace-io/react-store": ["packages/react-store/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

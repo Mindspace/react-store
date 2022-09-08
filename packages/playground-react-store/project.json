@@ -1,0 +1,84 @@
+{
+  "sourceRoot": "packages/playground-react-store/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/packages/playground-react-store",
+        "index": "packages/playground-react-store/src/index.html",
+        "baseHref": "/",
+        "main": "packages/playground-react-store/src/main.tsx",
+        "polyfills": "packages/playground-react-store/src/polyfills.ts",
+        "tsConfig": "packages/playground-react-store/tsconfig.app.json",
+        "assets": ["packages/playground-react-store/src/assets"],
+        "styles": [
+          "packages/playground-react-store/src/styles.css",
+          "packages/playground-react-store/src/app/tailwind.css"
+        ],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "packages/playground-react-store/src/environments/environment.ts",
+              "with": "packages/playground-react-store/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "playground-react-store:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "playground-react-store:build:development"
+        },
+        "production": {
+          "buildTarget": "playground-react-store:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/playground-react-store/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/playground-react-store"],
+      "options": {
+        "jestConfig": "packages/playground-react-store/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
