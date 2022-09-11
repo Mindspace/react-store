@@ -1,8 +1,8 @@
-# React State Management
+# Reactive State Management
 
 ![react-akita splash](https://user-images.githubusercontent.com/210413/112369582-54cd4600-8caa-11eb-9c7d-54ccfb7e0277.png)
 
-> Just install `@mindspace-io/react` to use.
+> Just install `@mindspace-io/react-store` to use.
 
 ## Purpose
 
@@ -36,7 +36,7 @@ The beauty of the `createStore()` is that a factory function is used to build th
 And the factory function is actually provided the [`set`, `get`, ...] store api:
 
 ```ts
-import create from '@mindspace-io/react';
+import create from '@mindspace-io/react-store';
 
 // Define store structure
 interface StoreState {
@@ -220,7 +220,7 @@ A [CodeSandbox demo](https://codesandbox.io/s/reactive-state-management-in-react
 Just install with:
 
 ```terminal
-npm install @mindspace-io/react
+npm install @mindspace-io/react-store @mindspace-io/core
 ```
 
-Under the hood, this library uses `immer`, `@datorama/akita`, and `rxjs`; these will be automatically installed along with `@mindspace-io/react`.
+Under the hood, this library uses `immer`, `@datorama/akita`, and `rxjs`; these will be automatically installed along with `@mindspace-io/react-store`.

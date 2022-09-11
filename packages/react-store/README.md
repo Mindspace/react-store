@@ -17,7 +17,7 @@ Easily build shared, reactive stores for your state management features:
 
 ![store-view](https://user-images.githubusercontent.com/210413/112065962-8c65b200-8b33-11eb-86b5-1bf831b6f4de.jpg)
 
-- [**`createStore()`**](https://github.com/Mindspace/react-store/blob/master/packages/react-store/docs/stateManagement.md)
+- [**`createStore()`**](https://github.com/Mindspace/react-store/blob/master/packages/react-store/lib/docs/react-store.md)
 
 <br>
 
@@ -29,8 +29,8 @@ Custom hooks for DependencyInjection (DI) and RxJS subscription management.
 
 ![image](https://user-images.githubusercontent.com/210413/68954901-8961f100-078a-11ea-8141-eac38ab21dab.png)
 
-- [**`useInjectorHook()`** for fast DI lookups of singleton services](https://github.com/Mindspace/react-store/blob/master/packages/react-store/docs/useInjector.md). Note this feature depends up the `@mindspace-io/core` DI code.
-- [**`useObservable()`** for 'Async pipe'-like functionality](https://github.com/Mindspace/react-store/blob/master/packages/react-store/docs/useObservable.md)
+- [**`useInjectorHook()`** for fast DI lookups of singleton services](https://github.com/Mindspace/react-store/blob/master/packages/react-store/lib/docs/useInjector.hook.md). Note this feature depends up the `@mindspace-io/core` DI code.
+- [**`useObservable()`** for 'Async pipe'-like functionality](https://github.com/Mindspace/react-store/blob/master/packages/react-store/lib/docs/useObservable.hook.md)
 
 <br>
 
